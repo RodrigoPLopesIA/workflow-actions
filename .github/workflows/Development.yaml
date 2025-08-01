@@ -1,6 +1,6 @@
 name: "Development workflow"
 on: 
-    push: 
+    pull_request:  
         branches: ["main"]
 jobs:
     lint:
@@ -12,6 +12,7 @@ jobs:
             - name: "Install Node"
               uses: actions/setup-node@v3
               with:
+                node-version: 18
                 cache: yarn
 
             - name: "Install dependencies"
