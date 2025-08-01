@@ -1,6 +1,5 @@
 import HelpBox from './HelpBox';
 import './HelpArea.css';
-console.log("test");
 
 const HELP_ITEMS = [
   {
